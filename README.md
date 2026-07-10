@@ -33,3 +33,26 @@ Install the development dependencies:
 ```bash
 npm install
 ```
+
+### Testing 
+An example of my unit test 
+```
+
+
+const {
+ 
+    celsiusToFahrenheit,
+ 
+    fahrenheitToCelsius
+ 
+} = require('../converter');
+ 
+  
+ 
+test('0°C converts to 32°F', () => {
+ 
+    expect(celsiusToFahrenheit(0)).toBe(32);
+ 
+}); 
+
+```

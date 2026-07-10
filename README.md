@@ -56,3 +56,12 @@ test('0°C converts to 32°F', () => {
 }); 
 
 ```
+
+### Continuous Integration
+
+I have set up continous integratin so that the tests are running and passing in the cloud. I made sure the tests were passing. I sued Github Actions in the market place to get my `yaml` file. 
+
+![Temperature Converter screenshot](readme-assets/screenshot.png)
+ 
+ This is how to make images
+ 

@@ -1,0 +1,27 @@
+{
+  "name": "temperature-converter",
+  "version": "1.0.0",
+  "description": "My temperature converter created using HTML, CSS and Javascript",
+  "main": "converter.js",
+  "scripts": { 
+
+  "test": "jest" 
+
+},
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharon933/temperature-converter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sharon933/temperature-converter/issues"
+  },
+  "homepage": "https://github.com/sharon933/temperature-converter#readme",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
+}

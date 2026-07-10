@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature Converter</title>
+
+      
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body> 
+
+
+    <div class="card"> 
+
+  
+
+        <h1>Temperature Converter</h1> 
+
+  
+
+        <p> 
+
+            Convert temperatures between 
+
+            Celsius (°C) and Fahrenheit (°F) 
+
+        </p> 
+
+  
+
+        <label for="temperature"> 
+
+            Temperature 
+
+        </label> 
+
+  
+
+        <input 
+
+            type="number" 
+
+            id="temperature" 
+
+            placeholder="Enter a temperature"> 
+
+  
+
+        <div class="conversion-options"> 
+
+  
+
+            <p>Convert from:</p> 
+
+  
+
+            <label> 
+
+                <input type="radio" name="conversion" value="cToF" checked> 
+
+                Celsius to Fahrenheit 
+
+            </label> 
+
+  
+
+            <label> 
+
+                <input type="radio" name="conversion" value="fToC"> 
+
+                Fahrenheit to Celsius 
+
+            </label> 
+
+  
+
+        </div> 
+
+  
+
+        <div class="button-group"> 
+
+  
+
+            <button id="convertButton"> 
+
+                Convert 
+
+            </button> 
+
+  
+
+            <button id="resetButton"> 
+
+                Reset 
+
+            </button> 
+
+  
+
+        </div> 
+
+  
+
+        <div id="result"> 
+
+            Your converted temperature will show here 
+
+        </div> 
+
+  
+
+    </div> 
+
+  
+
+    <script src="converter.js"></script> 
+    <script src="script.js"></script> 
+
+  
+
+</body>
+
+    
+
+
+
+</html>

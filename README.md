@@ -97,46 +97,6 @@ Using this workflow throughout the project helped to provide a structured and or
 ![GitHub Bug Workflow](readme-assets/github-bug-workflow.png)
 
 
- ### Manual Testing
-
- Although unit testing was incorporated using Jest to verify the temperature conversion functions, manual testing was also carried out to ensure my application functioned correctly from a user's perspective. Manual testing was important because it allowed the complete user journey to be tested and verified, including interaction with the graphical user interface, input validation, conversion options and the reset functionality. Through this approach, I ensured that the application behaved as expected when used in a web browser rather than only confirming that the conversion functions returned the correct values and performed correct calculations. 
-
-To record the testing process, a structured Microsoft Excel spreadsheet was created. The spreadsheet documented each test case using a consistent format that included the Test ID, requirement being tested, testing technique, representative test data, test steps, expected result, actual result and overall status – whether it passed or failed. Recording the results in this way provided a clear and structured audit trail of the testing activities undertaken and made it easier to verify that each functional requirement had been successfully tested. 
-
-I tried to use a range of recognised software testing techniques when designing the manual test cases. Positive testing was performed to verify that valid Celsius and Fahrenheit values produced the correct conversions. Negative testing was used to ensure that invalid scenarios, such as leaving the input field blank or attempting to enter non-numeric data, were handled appropriately by the application. Boundary Value Analysis was applied by testing values such as -40°C and 100°C to ensure that the conversion logic remained accurate at important boundary conditions. Equivalence Partitioning was demonstrated by testing decimal values such as 20.5°C, confirming that values from the same input category produced the expected results. A simple smoke test was also performed to confirm that the application loaded successfully before detailed functional testing began. 
-
-Representative test data was selected to demonstrate a range of realistic scenarios. This included common temperatures, decimal values, negative temperatures and large numeric values. These tests provided confidence that the application could correctly process different categories of input while maintaining accurate conversion calculations. The results recorded within the spreadsheet showed that every planned manual test case passed successfully, providing confidence that the application's core functionality operated correctly. The spreadsheet shows that from all twelve test cases, all have a status of pass. 
-
-Additionally, I would like to further discuss the results of the manual testing I conducted shown in Figure X. The spreadsheet demonstrates that a small range of representative test cases were executed to verify both the functional behaviour of the application and its input validation. Test data was selected to cover positive, negative and boundary value scenarios to provide confidence that the application would behave correctly under different conditions. 
-
-For example, TC001 and TC003 verified that the application correctly converted standard Celsius and Fahrenheit values, whilst TC002 and TC004 used important boundary values such as 100°C and -40°C to confirm that the conversion formula remained accurate. Decimal input was also tested (TC005) to ensure that the application could correctly process temperatures containing decimal places rather than only whole numbers. 
-
-The manual tests also focused on validating user interaction with my application. TC006 and TC007 confirmed that invalid input was handled correctly by displaying validation or preventing non-numeric input, whilst TC008, TC009 and TC010 verified that the Reset button and conversion options functioned as intended. All manual test cases achieved the expected result and were recorded as Pass, demonstrating that the application's core functionality operated successfully.
-
-
-
-My manual test spreadsheet table helps to show a structured approach to testing the software. A screenshot or Figure A of the spreadsheet has been included below to illustrate the documented test cases and their corresponding results. 
-
- ![Manual Testing Spreadsheet](readme-assets/manual-testing.png) 
-
- ### Accessibility Testing
-
-Accessibility is an important part of software development because it helps ensure that applications can be used by as many people as possible, regardless of their abilities or preferred method of interaction. Although this is a relatively small web application, accessibility was considered throughout the design and testing process to make the interface simple, clear and easy to navigate. 
-
-The final user interface was designed using a clean card layout positioned on a light blue background. A white card was chosen to provide a clear distinction between the application and the page background, allowing the user's attention to remain focused on the temperature converter. Dark text was used throughout the application to provide good colour contrast against the white background, making the headings, labels and instructions easy to read. The primary Convert button was displayed in blue so that it clearly stands out as the main action, whilst the Reset button was displayed in a neutral grey to differentiate it from the primary function without causing confusion. 
-
-Clear labels were also used throughout the interface. The temperature input field is labelled Temperature, whilst the radio button options are grouped under the heading Convert from. These labels provide clear instructions to the user and make it obvious what information is required before a conversion can be performed. 
-
-Keyboard accessibility was manually tested by navigating through the application using the Tab key rather than a mouse. During testing, it was confirmed that focus could move logically between the temperature input field, both radio button options, the Convert button and the Reset button. This ensured that the application remained fully usable using only keyboard navigation. 
-
-The layout of the application was intentionally kept simple, with generous spacing between controls to reduce the likelihood of user error. The user follows a logical sequence by entering a temperature, selecting the required conversion direction, clicking Convert and viewing the result. This straightforward workflow improves usability and creates a consistent user experience. 
-
-The screenshot below shows the user interface following the accessibility considerations described above. 
-
-![Final Temperature Converter User Interface](readme-assets/UI-tempconv.png)
-
-### Evaluation
-
 # Temperature Converter
 
 A simple web app for converting temperatures between Celsius (°C) and Fahrenheit (°F). Built with vanilla HTML, CSS, and JavaScript, with unit tests written in Jest and continuous integration via GitHub Actions.
